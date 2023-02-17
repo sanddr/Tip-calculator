@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&family=Montserrat:wght@100&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Grocery List</title>
+    </head>
+<body>
+    <div class="container">
+        <div id="calculator">
+            <h1>Tip calculator</h1>
+            <p style="border-bottom: 1px solid grey;"></p>
+            <h2>Bill amount</h2>
+            <i class="fa-solid fa-dollar-sign"></i><input id="bill" type="number">
+            <h2 >Number of guests</h2>
+            <i class="fa-solid fa-person"></i><input id="guests" type="number">
+            <h2>Service quality</h2>
+            <i class="fa-solid fa-star"></i>
+            <select id="service">
+                <option disabled selected value="0">Choose service quality</option>
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.25">25% - Very good</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - Average</option>
+                <option value="0.1">10% - Poor</option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+            <p style="border-bottom: 1px solid grey;"></p>
+            <div id="calculate-btn">
+                <button onclick="calculateTip()">Calculate</button>
+            </div>
+            <p style="border-bottom: 1px solid grey;"></p>
+            <div id="show-tip">
+            </div>
+
+            
+
+
+
+        </div>
+
+    </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
